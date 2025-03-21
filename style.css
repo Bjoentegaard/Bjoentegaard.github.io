@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #004d00, #01722a);
+    overflow: hidden;
+}
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px 0;
+    display: block;
+}
+nav ul li a:hover {
+    color: #ff7e5f;
+}
+.container {
+    text-align: center;
+    color: white;
+    margin-top: 60px; /* To avoid overlap with navbar */
+}
+h1 {
+    font-size: 4em;
+    animation: fadeIn 2s ease-in-out;
+}
+p {
+    font-size: 1.5em;
+    animation: slideIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #004d00;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.button:hover {
+    background: #004d00;
+    color: white;
+}
